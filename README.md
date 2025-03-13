@@ -2,6 +2,8 @@
 
 One page, four frameworks, all synced via the URL, using [nuqs](https://nuqs.47ng.com).
 
+https://github.com/user-attachments/assets/e3fedfb9-db32-403a-b689-b9425410a856
+
 ## What?
 
 The root app is a Next.js app router app, rendering subtrees using other
