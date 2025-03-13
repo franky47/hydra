@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    // Type checking
+    "strict": true,
+    "alwaysStrict": false, // Don't emit "use strict" to avoid conflicts with "use client"
+    // Modules
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    // Language & Environment
+    "target": "ESNext",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    // Emit
+    "noEmit": true,
+    "declaration": false,
+    "downlevelIteration": true,
+    "jsx": "preserve",
+    // Interop
+    "allowJs": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    // Misc
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "incremental": true,
+    "tsBuildInfoFile": ".next/cache/.tsbuildinfo",
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "src/vue/main.ts",
+    "src/vue/main.ts"
+  ],
+  "exclude": ["node_modules"]
+}
